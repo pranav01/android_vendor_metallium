@@ -4,7 +4,7 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/pa/sepolicy
+    vendor/merk/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     app.te \

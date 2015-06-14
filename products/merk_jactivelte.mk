@@ -1,4 +1,4 @@
-# Copyright (C) 2014 ParanoidAndroid Project
+# Copyright (C) 2015 MerkMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,31 +14,29 @@
 
 # Check for target product
 
-ifeq (pa_shamu,$(TARGET_PRODUCT))
+ifeq (merk_jactivelte,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xxhdpi
+OVERLAY_TARGET := merk_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
 
 # Inherit telephony common stuff
-$(call inherit-product, vendor/pa/configs/telephony.mk)
+$(call inherit-product, vendor/merk/configs/telephony.mk)
 
 # Include AOSPA common configuration
-include vendor/pa/main.mk
+include vendor/merk/main.mk
 
 # Inherit device configuration
-$(call inherit-product, device/moto/shamu/full_shamu.mk)
+$(call inherit-product, device/samsung/jactivelte/full_jactivelte.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := pa_shamu
-PRODUCT_BRAND := google
-PRODUCT_MODEL := Nexus 6
+PRODUCT_DEVICE := jactivelte
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
+PRODUCT_MODEL := GT-I9295
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=pa_shamu \
-    BUILD_FINGERPRINT=google/shamu/shamu:5.1/LMY47I/1767468:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 5.1 LMY47I 1767468 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jactivelte BUILD_ID=KTU84Q BUILD_FINGERPRINT="samsung/jactivelte/jactivelte:4.4.2/KTU84Q/I9295XXUCNE5:user/release-keys" PRIVATE_BUILD_DESC="jactivelte-user 4.4.2 KTU84Q I9295XXUCNE5 release-keys"
 
 endif

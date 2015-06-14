@@ -1,10 +1,11 @@
 # Copyright (C) 2013 ParanoidAndroid Project
+# Modified for the MerkMod project in 2015
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
+# Licensed under the Amerkche License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+#      http://www.amerkche.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,11 +15,11 @@
 
 
 
-include vendor/pa/vendor.mk
-include vendor/pa/configs/aosp_fixes.mk
-include vendor/pa/configs/system.mk
-include vendor/pa/configs/pa_overrides.mk
-include vendor/pa/configs/bootanimation.mk
-include vendor/pa/configs/version.mk
-include vendor/pa/configs/legacy_extras.mk
-include vendor/pa/configs/themes_common.mk
+include vendor/merk/vendor.mk
+include vendor/merk/configs/aosp_fixes.mk
+include vendor/merk/configs/system.mk
+include vendor/merk/configs/merk_overrides.mk
+include vendor/merk/configs/bootanimation.mk
+include vendor/merk/configs/version.mk
+include vendor/merk/configs/legacy_extras.mk
+include vendor/merk/configs/themes_common.mk

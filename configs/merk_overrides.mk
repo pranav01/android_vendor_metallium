@@ -12,21 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Check for target product
-
-ifeq (pa_mako,$(TARGET_PRODUCT))
-
-# Include ParanoidAndroid common configuration
-include vendor/pa/main.mk
-
-# Inherit AOSP device configuration
-$(call inherit-product, device/lge/mako/full_mako.mk)
-
-# Override AOSP build properties
-PRODUCT_NAME := pa_mako
-PRODUCT_BRAND := Google
-PRODUCT_MODEL := Nexus 4
-PRODUCT_MANUFACTURER := LGE
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:5.0.1/LRX22C/1602158:user/release-keys" PRIVATE_BUILD_DESC="occam-user 5.0.1 LRX22C 1602158 release-keys"
-
-endif
+PRODUCT_PACKAGES += \
+    busybox
