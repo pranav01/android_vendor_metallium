@@ -1,4 +1,4 @@
-# AOSPA-L Extras
+# MerkMod Extras
 
 on init
     export ANDROID_CACHE /cache

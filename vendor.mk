@@ -1,5 +1,5 @@
 # Export rom name
-export VENDOR := merkmod
+export VENDOR := merk
 
 # Version info
 ROM_VERSION_MAJOR := 1
