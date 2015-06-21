@@ -24,7 +24,7 @@ endif
 
 #Merk XHDPI Devices
 
-ifneq ($(filter merk_n7100,$(TARGET_PRODUCT)),)
+ifneq ($(filter merk_armani merk_n7100,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
        vendor/merk/prebuilt/bootanimation/1280x720.zip:system/media/bootanimation.zip
 endif
