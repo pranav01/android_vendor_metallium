@@ -1,1 +1,2 @@
 add_lunch_combo merk_jactivelte-userdebug
+add_lunch_combo merk_nicki-userdebug

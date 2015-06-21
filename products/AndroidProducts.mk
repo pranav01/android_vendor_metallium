@@ -16,3 +16,7 @@
 ifeq (merk_jactivelte,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_jactivelte.mk
 endif
+
+ifeq (merk_nicki,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_nicki.mk
+endif
