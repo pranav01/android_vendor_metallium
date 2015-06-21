@@ -20,3 +20,7 @@ endif
 ifeq (merk_nicki,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_nicki.mk
 endif
+
+ifeq (merk_n7100,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_n7100.mk
+endif
