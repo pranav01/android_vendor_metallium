@@ -28,3 +28,11 @@ endif
 ifeq (merk_n7100,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_n7100.mk
 endif
+
+ifeq (merk_sprout,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_sprout.mk
+endif
+
+ifeq (merk_sprout_b,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_sprout_b.mk
+endif
