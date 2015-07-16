@@ -4,3 +4,4 @@ add_lunch_combo merk_nicki-userdebug
 add_lunch_combo merk_n7100-userdebug
 add_lunch_combo merk_sprout-userdebug
 add_lunch_combo merk_sprout_b-userdebug
+add_lunch_combo merk_find7-userdebug

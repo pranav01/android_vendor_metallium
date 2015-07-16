@@ -17,7 +17,7 @@
 
 # Merk XXHDPI Devices
 
-ifneq ($(filter merk_jactivelte,$(TARGET_PRODUCT)),)
+ifneq ($(filter merk_find7 merk_jactivelte,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/merk/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
 endif

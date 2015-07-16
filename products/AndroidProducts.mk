@@ -34,5 +34,9 @@ ifeq (merk_sprout,$(TARGET_PRODUCT))
 endif
 
 ifeq (merk_sprout_b,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_sprout_b.mk
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_sprout_b.
+endif
+
+ifeq (merk_find7,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_find7.
 endif
