@@ -13,30 +13,35 @@
 # limitations under the License.
 
 # Check for target product
-
-ifeq (merk_jactivelte,$(TARGET_PRODUCT))
+ifeq (metallium_n7100,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := merk_xhdpi
+OVERLAY_TARGET := metallium_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
 
 # Inherit telephony common stuff
-$(call inherit-product, vendor/merk/configs/telephony.mk)
+$(call inherit-product, vendor/metallium/configs/telephony.mk)
 
-# Include AOSPA common configuration
-include vendor/merk/main.mk
+# Include metallium common configuration
+include vendor/metallium/main.mk
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/jactivelte/full_jactivelte.mk)
+$(call inherit-product, device/samsung/n7100/full_n7100.mk)
 
-# Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := jactivelte
-PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := GT-I9295
+# Override AOSP build properties
+PRODUCT_NAME := metallium_n7100
+PRODUCT_DEVICE := n7100
+PRODUCT_BRAND := Samsung
+PRODUCT_MODEL := GT-N7100
+PRODUCT_MANUFACTURER := Samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jactivelte BUILD_ID=KTU84Q BUILD_FINGERPRINT="samsung/jactivelte/jactivelte:4.4.2/KTU84Q/I9295XXUCNE5:user/release-keys" PRIVATE_BUILD_DESC="jactivelte-user 4.4.2 KTU84Q I9295XXUCNE5 release-keys"
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=t03gxx \
+    TARGET_DEVICE=t03g \
+    PRIVATE_BUILD_DESC="t03gxx-user 4.4.2 KOT49H N7100XXUFNL1 release-keys" \
+    BUILD_FINGERPRINT="samsung/t03gxx/t03g:4.4.2/KOT49H/N7100XXUFNL1:user/release-keys"
 
 endif

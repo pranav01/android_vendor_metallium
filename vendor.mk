@@ -1,5 +1,5 @@
 # Export rom name
-export VENDOR := merk
+export VENDOR := metallium
 
 # Version info
 ROM_VERSION_MAJOR := 1

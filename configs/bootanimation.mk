@@ -13,18 +13,18 @@
 # limitations under the License.
 
 
-# Add Merk bootanimation based on xxxhdpi xxhdpi xhdpi hdpi tvdpi resolution
+# Add Metallium bootanimation based on xxxhdpi xxhdpi xhdpi hdpi tvdpi resolution
 
 # Merk XXHDPI Devices
 
-ifneq ($(filter merk_find7 merk_jactivelte,$(TARGET_PRODUCT)),)
+ifneq ($(filter metallium_find7 metallium_jactivelte,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/merk/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
+        vendor/metallium/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
 endif
 
 #Merk XHDPI Devices
 
-ifneq ($(filter merk_armani merk_n7100,$(TARGET_PRODUCT)),)
+ifneq ($(filter metallium_armani metallium_n7100,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-       vendor/merk/prebuilt/bootanimation/1280x720.zip:system/media/bootanimation.zip
+       vendor/metallium/prebuilt/bootanimation/1280x720.zip:system/media/bootanimation.zip
 endif

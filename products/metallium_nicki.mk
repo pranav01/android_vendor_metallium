@@ -14,26 +14,26 @@
 
 # Check for target product
 
-ifeq (merk_nicki,$(TARGET_PRODUCT))
+ifeq (metallium_nicki,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := merk_hdpi
+OVERLAY_TARGET := metallium_hdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
 
 # Inherit telephony common stuff
-$(call inherit-product, vendor/merk/configs/telephony.mk)
+$(call inherit-product, vendor/metallium/configs/telephony.mk)
 
 # Include AOSPA common configuration
-include vendor/merk/main.mk
+include vendor/metallium/main.mk
 
 # Inherit device configuration
 $(call inherit-product, device/sony/nicki/nicki.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nicki
-PRODUCT_NAME := merk_nicki
+PRODUCT_NAME := metallium_nicki
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := nicki
 PRODUCT_MANUFACTURER := Sony

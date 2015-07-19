@@ -66,6 +66,6 @@ endif
 
 # Backuptool support
 PRODUCT_COPY_FILES += \
-    vendor/merk/prebuilt/system/addon.d/50-backuptool.sh:system/addon.d/50-backuptool.sh \
-    vendor/merk/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/merk/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh
+    vendor/metallium/prebuilt/system/addon.d/50-backuptool.sh:system/addon.d/50-backuptool.sh \
+    vendor/metallium/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/metallium/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh

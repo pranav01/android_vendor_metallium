@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (merk_armani,$(TARGET_PRODUCT))
+ifeq (metallium_armani,$(TARGET_PRODUCT))
 
 $(call inherit-product, device/xiaomi/armani/full_armani.mk)
 
@@ -21,12 +21,12 @@ $(call inherit-product, device/xiaomi/armani/full_armani.mk)
 PREFS_FROM_SOURCE ?= false
 
 # Inherit telephony common stuff
-$(call inherit-product, vendor/merk/configs/telephony.mk)
+$(call inherit-product, vendor/metallium/configs/telephony.mk)
 
 # Include MerkMod common configuration
-include vendor/merk/main.mk
+include vendor/metallium/main.mk
 
-PRODUCT_NAME := merk_armani
+PRODUCT_NAME := metallium_armani
 BOARD_VENDOR := xiaomi
 PRODUCT_DEVICE := armani
 

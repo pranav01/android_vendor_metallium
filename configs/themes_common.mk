@@ -4,4 +4,4 @@ PRODUCT_PACKAGES += \
    ThemesProvider
 
 PRODUCT_COPY_FILES += \
-   vendor/merk/configs/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml
+   vendor/metallium/configs/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml

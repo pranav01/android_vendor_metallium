@@ -1,7 +1,7 @@
-add_lunch_combo merk_armani-userdebug
-add_lunch_combo merk_jactivelte-userdebug
-add_lunch_combo merk_nicki-userdebug
-add_lunch_combo merk_n7100-userdebug
-add_lunch_combo merk_sprout-userdebug
-add_lunch_combo merk_sprout_b-userdebug
-add_lunch_combo merk_find7-userdebug
+add_lunch_combo metallium_armani-userdebug
+add_lunch_combo metallium_jactivelte-userdebug
+add_lunch_combo metallium_nicki-userdebug
+add_lunch_combo metallium_n7100-userdebug
+add_lunch_combo metallium_sprout-userdebug
+add_lunch_combo metallium_sprout_b-userdebug
+add_lunch_combo metallium_find7-userdebug

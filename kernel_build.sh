@@ -40,10 +40,10 @@ JVER=$(javac -version  2>&1 | head -n1 | cut -f2 -d' ')
 DEVICE="$1"
 
 # Get build version
-MAJOR=$(cat $DIR/vendor/merk/vendor.mk | grep 'ROM_VERSION_MAJOR := *' | sed  's/ROM_VERSION_MAJOR := //g')
-MINOR=$(cat $DIR/vendor/merk/vendor.mk | grep 'ROM_VERSION_MINOR := *' | sed  's/ROM_VERSION_MINOR := //g')
-MAINTENANCE=$(cat $DIR/vendor/merk/vendor.mk | grep 'ROM_VERSION_MAINTENANCE := *' | sed  's/ROM_VERSION_MAINTENANCE := //g')
-TAG=$(cat $DIR/vendor/merk/vendor.mk | grep 'ROM_VERSION_TAG := *' | sed  's/ROM_VERSION_TAG := //g')
+MAJOR=$(cat $DIR/vendor/metallium/vendor.mk | grep 'ROM_VERSION_MAJOR := *' | sed  's/ROM_VERSION_MAJOR := //g')
+MINOR=$(cat $DIR/vendor/metallium/vendor.mk | grep 'ROM_VERSION_MINOR := *' | sed  's/ROM_VERSION_MINOR := //g')
+MAINTENANCE=$(cat $DIR/vendor/metallium/vendor.mk | grep 'ROM_VERSION_MAINTENANCE := *' | sed  's/ROM_VERSION_MAINTENANCE := //g')
+TAG=$(cat $DIR/vendor/metallium/vendor.mk | grep 'ROM_VERSION_TAG := *' | sed  's/ROM_VERSION_TAG := //g')
 
 if [ -n "$TAG" ]; then
         VERSION=$MAJOR.$MINOR$MAINTENANCE-$TAG
@@ -54,7 +54,7 @@ fi
 # Get start time
 res1=$(date +%s.%N)
 
-echo -e "${cya}Building ${bldcya}MERKMOD $VERSION for $DEVICE ${txtrst}";
+echo -e "${cya}Building ${bldcya}METALLIUM $VERSION for $DEVICE ${txtrst}";
 echo -e "${bldgrn}Start time: $(date) ${txtrst}"
 
 echo -e ""
@@ -78,7 +78,7 @@ if [ -n "${INTERACTIVE}" ]; then
         echo -e "${bldblu}Dropping to interactive shell${txtrst}"
         echo -en "${bldblu}Remeber to lunch you device:"
         if [ "${VENDOR}" == "pa" ]; then
-                echo -e "[${bldgrn}lunch merk_$DEVICE-userdebug${bldblu}]${txtrst}"
+                echo -e "[${bldgrn}lunch metallium_$DEVICE-userdebug${bldblu}]${txtrst}"
         else
                 echo -e "[${bldgrn}lunch full_$DEVICE-userdebug${bldblu}]${txtrst}"
         fi
@@ -93,7 +93,7 @@ else
         # lunch/brunch device
         echo -e "${bldblu}Lunching device [$DEVICE] ${cya}(Includes dependencies sync)${txtrst}"
         export PREFS_FROM_SOURCE
-        lunch "merk_$DEVICE-userdebug";
+        lunch "metallium_$DEVICE-userdebug";
 
         echo -e "${bldblu}Starting compilation${txtrst}"
         mka bootzip -j4
@@ -104,8 +104,8 @@ echo -e ""
 res2=$(date +%s.%N)
 echo -e "${bldgrn}Total time elapsed: ${txtrst}${grn}$(echo "($res2 - $res1) / 60"|bc ) minutes ($(echo "$res2 - $res1"|bc ) seconds)${txtrst}"
 
-if [ -f $DIR/out/target/product/$DEVICE/MERKMOD-$DEVICE-kernel-signed.zip ]; then
-   mv $DIR/out/target/product/$DEVICE/MERKMOD-$DEVICE-kernel-signed.zip $DIR/out/target/product/$DEVICE/MERKMOD-$DEVICE-$VERSION-kernel-$DATE-signed.zip
+if [ -f $DIR/out/target/product/$DEVICE/METALLIUM-$DEVICE-kernel-signed.zip ]; then
+   mv $DIR/out/target/product/$DEVICE/METALLIUM-$DEVICE-kernel-signed.zip $DIR/out/target/product/$DEVICE/METALLIUM-$DEVICE-$VERSION-kernel-$DATE-signed.zip
 else
    echo "file does not exist or wrong directory located"
 fi

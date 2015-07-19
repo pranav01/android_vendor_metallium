@@ -1,5 +1,5 @@
 # Copyright (C) 2014 ParanoidAndroid Project
-# The MerkMod Project 2014
+# The Metallium Project 2014
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,16 +15,16 @@
 
 # Check for target product
 
-ifeq (merk_find7,$(TARGET_PRODUCT))
+ifeq (metallium_find7,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := merk_xxhdpi
+OVERLAY_TARGET := metallium_xxhdpi
 
 # Inherit telephony common stuff
-$(call inherit-product, vendor/merk/configs/telephony.mk)
+$(call inherit-product, vendor/metallium/configs/telephony.mk)
 
-# Include MerkMod common configuration
-include vendor/merk/main.mk
+# Include Metallium common configuration
+include vendor/metallium/main.mk
 
 # Inherit device configuration
 $(call inherit-product, device/oppo/find7/full_find7.mk)
@@ -32,7 +32,7 @@ $(call inherit-product, device/oppo/find7/full_find7.mk)
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Override AOSP build properties
-PRODUCT_NAME := merk_find7
+PRODUCT_NAME := metallium_find7
 PRODUCT_DEVICE := find7
 PRODUCT_BRAND := oppo
 PRODUCT_MANUFACTURER := OPPO
