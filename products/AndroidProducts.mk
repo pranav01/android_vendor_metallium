@@ -1,5 +1,5 @@
 # Copyright (C) 2013 ParanoidAndroid Project
-# Modified for the MerkMod Project in 2015
+# Modified for the Metallium-ROM Project in 2015
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,26 +17,30 @@ ifeq (metallium_armani,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_armani.mk
 endif
 
-ifeq (merk_jactivelte,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_jactivelte.mk
+ifeq (metallium_jactivelte,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_jactivelte.mk
 endif
 
-ifeq (merk_nicki,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_nicki.mk
+ifeq (metallium_nicki,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_nicki.mk
 endif
 
-ifeq (merk_n7100,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_n7100.mk
+ifeq (metallium_n7100,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_n7100.mk
 endif
 
-ifeq (merk_sprout,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_sprout.mk
+ifeq (metallium_sprout,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_sprout.mk
 endif
 
-ifeq (merk_sprout_b,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_sprout_b.
+ifeq (metallium_sprout_b,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_sprout_b.
 endif
 
-ifeq (merk_find7,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/merk_find7.
+ifeq (metallium_find7,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_find7.
+endif
+
+ifeq (metallium_ks01lte,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_ks01lte.
 endif
