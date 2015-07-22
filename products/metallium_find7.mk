@@ -27,7 +27,7 @@ $(call inherit-product, vendor/metallium/configs/telephony.mk)
 include vendor/metallium/main.mk
 
 # Inherit device configuration
-$(call inherit-product, device/oppo/find7/full_find7.mk)
+$(call inherit-product, device/oppo/find7/metallium_find7.mk)
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
