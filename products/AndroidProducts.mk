@@ -34,13 +34,13 @@ ifeq (metallium_sprout,$(TARGET_PRODUCT))
 endif
 
 ifeq (metallium_sprout_b,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_sprout_b.
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_sprout_b.mk
 endif
 
 ifeq (metallium_find7,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_find7.
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_find7.mk
 endif
 
 ifeq (metallium_ks01lte,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_ks01lte.
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_ks01lte.mk
 endif
