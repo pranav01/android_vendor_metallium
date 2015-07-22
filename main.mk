@@ -16,7 +16,6 @@
 
 
 include vendor/metallium/vendor.mk
-include vendor/metallium/main.mk
 include vendor/metallium/configs/aosp_fixes.mk
 include vendor/metallium/configs/system.mk
 include vendor/metallium/configs/metallium_overrides.mk
