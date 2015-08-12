@@ -17,6 +17,10 @@ ifeq (metallium_armani,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_armani.mk
 endif
 
+ifeq (metallium_bacon,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_bacon.mk
+endif
+
 ifeq (metallium_jactivelte,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/metallium_jactivelte.mk
 endif
