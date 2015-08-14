@@ -6,3 +6,4 @@ add_lunch_combo metallium_n7100-userdebug
 add_lunch_combo metallium_sprout-userdebug
 add_lunch_combo metallium_sprout_b-userdebug
 add_lunch_combo metallium_find7-userdebug
+add_lunch_combo metallium_d802-userdebug
