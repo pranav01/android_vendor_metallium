@@ -17,7 +17,7 @@
 
 # Merk XXHDPI Devices
 
-ifneq ($(filter metallium_bacon metallium_find7 metallium_jactivelte,$(TARGET_PRODUCT)),)
+ifneq ($(filter metallium_bacon metallium_find7 metallium_jactivelte metallium_d802,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/metallium/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
 endif
