@@ -43,7 +43,7 @@ PRODUCT_PACKAGES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    MateonLauncher2
+    MateonLauncher
 
 # Extra tools
 PRODUCT_PACKAGES += \
