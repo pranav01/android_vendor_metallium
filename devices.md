@@ -1,51 +1,23 @@
 # Device List #
 
-## Working devices on latest AOSPA-L version ##
+## Working devices on latest Metallium version ##
 
-amami | Saatvik Shukla
+cancro | Aniket
 
-armani | TechExhibeo
+condor | Aniket
 
-bacon | SferaDev, Ayysir, xboxfanj
+D802 | iSchneiderle, MardonHH
 
-condor | TheStrix
+find7 | mkodekar
 
-dlx | tes4p00ner
+i9100 | Aniket
 
-falcon | DC07
+jactivelte | hashem78
 
-find7 | jumoog
+KS01LTE| Buda1996
 
-ghost | Megatron007, DC07
-
-G3 [D850, D851, D852, D855, LS990, VS985] | bryan2894, WillPresley
-
-honami | Saatvik Shukla 
-
-i9300 | jumoog
-
-m8 | xboxfanj
-
-n5110 | SferaDev
-
-odin | SuperHanss
-
-peregrine | Kayant
-
-sirius | tomgus1
-
-titan | DC07
-
-togari | Saatvik Shukla
-
-togari_gpe | Saatvik Shukla
+lettuce | Aniket
 
 tomato | Men_in_black007
 
-xt926 | cj360
 
-yuga | SuperHanss
-
-## Deprecated devices ##
-
-galaxysmtd | SferaDev
