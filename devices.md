@@ -4,7 +4,7 @@
 
 cancro | Aniket
 
-condor | Aniket
+falcon | Nimit
 
 D802 | iSchneiderle, MardonHH
 
@@ -16,8 +16,6 @@ jactivelte | hashem78
 
 KS01LTE| Buda1996
 
-lettuce | Aniket
+lettuce | Pranav
 
 tomato | Men_in_black007
-
-
